@@ -1,4 +1,5 @@
-/* Aula 1
+/*Parte1
+ Aula 1
 var nome = "Antonio";
 var n1 = 27;
 var n2 = "10";
@@ -37,7 +38,7 @@ if (idade >= 18){
     alert("Maior de idade");
 } else {
     alert("Menor de idade");
-}*/
+}
 
 var count = 0;
 
@@ -54,3 +55,30 @@ var d = new Date();
 console.log(d);
 console.log(d.getMonth() + 1);
 console.log(d.getMinutes());
+*/
+/*Parte 2
+Aula 2*/
+
+function soma(n1,n2) {
+    return n1 + n2;
+}
+
+console.log(soma(1,2));
+
+function setReplace(frase, nome, novo_nome){
+    return frase.replace(nome, novo_nome);
+}
+
+console.log(setReplace("Vai Japão", "Japão", "Brasil"));
+
+function validaIdade(idade){
+    if (idade >= 18) {
+        validar = true;
+    } else {
+        validar = false;
+    }
+    return validar;
+}
+
+var idade = prompt("Qual a sua idade?");
+console.log(validaIdade(idade));
