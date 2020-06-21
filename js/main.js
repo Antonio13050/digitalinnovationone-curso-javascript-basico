@@ -57,7 +57,7 @@ console.log(d.getMonth() + 1);
 console.log(d.getMinutes());
 */
 /*Parte 2
-Aula 2*/
+Aula 1
 
 function soma(n1,n2) {
     return n1 + n2;
@@ -81,4 +81,31 @@ function validaIdade(idade){
 }
 
 var idade = prompt("Qual a sua idade?");
-console.log(validaIdade(idade));
+console.log(validaIdade(idade));*/
+
+/*Aula 2*/
+function botao(){
+    document.getElementById("agradecimento").innerHTML = "<b>Obrigado por clicar</b>";
+}
+
+function redirecionar(){
+    window.open("https://google.com");
+    window.location.href = "https://google.com";
+}
+
+function trocar(elemento){
+    //document.getElementById("mousemove").innerHTML = "Obrigado por passar o mouse";
+    elemento.innerHTML = "Obrigado por passar o mouse";
+}
+
+function voltar(){
+    document.getElementById("mousemove").innerHTML = "Passe o mouse aqui";
+}
+
+function load(){
+    console.log("Página carregada");
+}
+
+function change(elemento){
+    console.log(elemento.value);
+}
